@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 14px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            top: 100%;
+            left: 0;
+            min-width: 150px;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul li ul li {
+            border-bottom: 1px solid #555;
+        }
+
+        nav ul li ul li:last-child {
+            border-bottom: none;
+        }
+
+        nav ul li ul li a {
+            padding: 10px 20px;
+            white-space: nowrap;
+        }
+
+        nav ul li ul li a:hover {
+            background-color: #575757;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        section p {
+            font-size: 1.2em;
+        }
+
+        section a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        section a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Page</h1>
+        <p>Welcome to my homepage. Explore and enjoy!</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+                <a href="#">Services ▼</a>
+                <ul>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <p>This is my first homepage. I'm learning CSS to create a visually appealing page.</p>
+        <p>Feel free to send me a message: <a href="mailto:111306049@nccu.edu.tw">111306049@nccu.edu.tw</a></p>
+    </section>
+</body>
+</html>
